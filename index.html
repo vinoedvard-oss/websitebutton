@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .num1{
+            width: 350px;
+            height: 75px;
+            border-radius: 40px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            background-color: midnightblue;
+            color: aliceblue;
+        }
+        .num2{
+            width: 350px;
+            height: 75px;
+            border-radius: 40px;
+            background-image: url(iphone.avif);
+            color: aliceblue;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            position: relative;
+            left: -200px;
+            z-index: -1;
+            visibility: hidden;
+            transition: 10s ease-in;
+        }
+        .main:hover .num2{
+            visibility: visible;
+            transform: translateX(200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button class="num1">CALL US</button>
+        <button class="num2">(453)456-4742</button>
+    </div>
+</body>
+</html>
